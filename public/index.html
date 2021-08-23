@@ -14,10 +14,10 @@
 </head>
 
 <body>
-	<hello-svelte></hello-svelte>
+	<hello-svelte id="custom"></hello-svelte>
 	<hello-svelte></hello-svelte>
 	<script>
-		let component = document.querySelector("hello-svelte");
+		let component = document.querySelector("#custom");
 		component.setAttribute("_data", JSON.stringify({ cheer: "Mundo" }));
 	</script>
 </body>
